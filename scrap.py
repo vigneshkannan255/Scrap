@@ -23,6 +23,6 @@ def fun(urll):
 user = raw_input("Enter URL:")
 
 fun(user)
-#for fu in list:
-    #fun(fu)
-    #print(fu)
+for fu in list:
+    fun(fu)
+    print(fu)
