@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup as bs
 import urllib3
  
 
-f = open('a.txt','a')
+x = open('a.txt','a')
 
 http = urllib3.PoolManager()
 list =[]
@@ -12,7 +12,7 @@ def fun(urll):
 
     for link in soup.find_all('a'):
    # print(link.get('href'))
-        f.write(link.get('href')+"\n")
+        x.write(link.get('href')+"\n")
         list.append(link.get('href'))
         print(link.get('href'))
 
